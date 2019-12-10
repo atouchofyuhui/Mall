@@ -1,0 +1,19 @@
+@import "./normalize.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color: #666;
+  --font-size: 14px;
+  --line-height: 1.2;
+}
+
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
