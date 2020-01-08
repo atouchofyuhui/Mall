@@ -38,16 +38,16 @@ export default {
 
 <style>
 .tabbar-item {
-  height: 49px;
+  height: 4.9rem;
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .tabbar-item img {
-  width: 24px;
-  height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 </style>

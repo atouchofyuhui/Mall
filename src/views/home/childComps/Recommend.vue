@@ -40,7 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: brown;
+  color: #333;
 }
 .recommend-item img {
   width: 7rem;

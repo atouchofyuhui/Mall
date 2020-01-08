@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <router-view />
+    <keep-alive exclude="Detail">
+      <transition>
+        <router-view />
+      </transition>
+    </keep-alive>
     <main-tabbar />
   </div>
 </template>
@@ -17,4 +21,22 @@ export default {
 
 <style>
 @import "assets/css/base.css";
+
+#app {
+  overflow-x: hidden;
+}
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s;
+}
 </style>
